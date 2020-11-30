@@ -1,0 +1,31 @@
+metadonnées :
+
+author : Samy Gascoin-Fontaine
+creation : 19 novembre 2020
+modification : 20 novembre 2020
+titre : presentation test n°1
+subject : test de génération Json
+keywords : test, Python, Json
+length : n/a
+format d'origine : n/a
+
+contenu :
+
+niveau 1  : 'Chapitre 1'
+niveau 2  : 'Section 1'
+
+slide 1 :
+titre : première page
+contenu : italique(ceci est en italique)
+
+niveau 3  : Sous-Section 1
+
+slide 2 :
+titre : deuxième page
+contenu : gras(ceci est en gras)
+
+niveau 2  : Section 2
+
+slide 3 :
+titre : troisième page
+contenu : souligné(ceci est souligné)

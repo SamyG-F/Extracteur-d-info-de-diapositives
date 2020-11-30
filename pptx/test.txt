@@ -1,0 +1,2181 @@
+{
+  "length": 24,
+  "format": "pptx",
+  "slides": [
+    {
+      "page": "1",
+      "header": "React : Fondamentaux",
+      "frames": [
+        {
+          "type": "SUBTITLE (4)",
+          "paragraphs": [
+            [
+              {
+                "text": "Rémi Venant - IUT MMI Laval - LP DIWA "
+              },
+              {
+                "text": "V1.1 - 2019/2020"
+              },
+              {
+                "text": "Fondé sur React V16.12.0"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "CENTER_TITLE (3)",
+          "paragraphs": [
+            [
+              {
+                "text": "React",
+                "color": "39BC9C"
+              },
+              {
+                "text": " : Fondamentaux"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page": "2",
+      "header": "Ch. 1 \nPrincipes de base",
+      "frames": [
+        {
+          "type": "CENTER_TITLE (3)",
+          "paragraphs": [
+            [
+              {
+                "text": "Ch. 1 "
+              }
+            ],
+            [
+              {
+                "text": "Principes de base"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SUBTITLE (4)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "3",
+      "header": "React : une définition",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "React : une définition"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "React : Un framework JS"
+              }
+            ],
+            [
+              {
+                "text": "développé et maintenu par Facebook"
+              }
+            ],
+            [
+              {
+                "text": "pour "
+              },
+              {
+                "text": "créer des interfaces utilisateurs",
+                "color": "3498DB"
+              }
+            ],
+            [
+              {
+                "text": "avec pour ambition d’être :"
+              }
+            ],
+            [
+              {
+                "text": "déclaratif",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " (pour avoir un code plus prédictif et plus simple à débugger et à maintenir)"
+              }
+            ],
+            [
+              {
+                "text": "orienté composants",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              }
+            ],
+            [
+              {
+                "text": "facilement intégrable",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " à d’autre bibliothèque/frameworks JS"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "4",
+      "header": "React : une anti-définition",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "React : une anti-définition"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "React n’est pas :"
+              }
+            ],
+            [
+              {
+                "text": "un langage de programmation"
+              }
+            ],
+            [
+              {
+                "text": "un framework de gestion des modèles de données d’une application"
+              }
+            ],
+            [
+              {
+                "text": "un framework de templating"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "5",
+      "header": "React : définition structurelle",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "React : définition structurelle"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "React :"
+              }
+            ],
+            [
+              {
+                "text": "Propose un framework fondé sur la manipulation d’un "
+              },
+              {
+                "text": "DOM Virtuel",
+                "color": "18BC9C"
+              }
+            ],
+            [
+              {
+                "text": "Considère une construction "
+              },
+              {
+                "text": "hiérarchique",
+                "color": "18BC9C"
+              },
+              {
+                "text": " de composants"
+              }
+            ],
+            [
+              {
+                "text": "Impose un "
+              },
+              {
+                "text": "sens unique",
+                "color": "18BC9C"
+              },
+              {
+                "text": " de transmission des données"
+              }
+            ],
+            [
+              {
+                "text": "incite à la création de composants en "
+              },
+              {
+                "text": "tout-javascript",
+                "color": "18BC9C"
+              }
+            ],
+            [
+              {
+                "text": "utilise le langage "
+              },
+              {
+                "text": "JSX",
+                "color": "18BC9C"
+              },
+              {
+                "text": " pour créer des « structures de DOM » en JavaScript"
+              }
+            ],
+            [
+              {
+                "text": "s’appuie sur "
+              },
+              {
+                "text": "EcmaScript 6/7",
+                "color": "18BC9C"
+              },
+              {
+                "text": " (utilisation massive des classe, arrow functions)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "6",
+      "header": "Le DOM Virtuel : base du framework React",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Le DOM Virtuel : base du framework React"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "Une "
+              },
+              {
+                "text": "représentation du DOM en JS",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "On ne génère plus le DOM lui-même, comme avec un langage de "
+              },
+              {
+                "text": "templating",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " ; on ne génère « qu’une » arborescence d’objets JS en mémoire"
+              }
+            ],
+            [
+              {
+                "text": "À chaque événement sur un "
+              },
+              {
+                "text": "composant",
+                "font": "+mn-lt",
+                "bold": true
+              },
+              {
+                "text": " (interaction utilisateur, retour serveur…) : on régénère "
+              },
+              {
+                "text": "toute l’arborescence d’objets (le VDOM)",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "E74C3D"
+              }
+            ],
+            [
+              {
+                "text": "Traitement du VDOM par React:"
+              }
+            ],
+            [
+              {
+                "text": "Au 1er affichage :  VDOM -> DOM réel"
+              }
+            ],
+            [
+              {
+                "text": "2 versions du VDOM : celle qui correspond au DOM réel, et la nouvelle version que l’on veut afficher"
+              }
+            ],
+            [
+              {
+                "text": " Lorsqu’une maj d’affichage doit être faite, React :"
+              }
+            ],
+            [
+              {
+                "text": "calcule la différence entre les 2 version du VDOM (façon minimale de mettre à jour le DOM)"
+              }
+            ],
+            [
+              {
+                "text": "met à jour le DOM"
+              }
+            ],
+            [
+              {
+                "text": "Beaucoup plus performant car manipuler du JS est beaucoup plus rapide que le DOM !"
+              }
+            ],
+            [
+              {
+                "text": "On ne touche plus au DOM soi-même (exit JQuery)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Différence"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Nouveau"
+              },
+              {
+                "text": "VDOM"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "DOM"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Ancien"
+              },
+              {
+                "text": "VDOM"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Evénements"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "maj"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "calcul"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "création"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "React"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page": "7",
+      "header": "Ch. 2\nComposants & JSX",
+      "frames": [
+        {
+          "type": "CENTER_TITLE (3)",
+          "paragraphs": [
+            [
+              {
+                "text": "Ch. 2"
+              }
+            ],
+            [
+              {
+                "text": "Composants & JSX"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SUBTITLE (4)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "8",
+      "header": "Composant",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Composant"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "Un Composant est Objet JS, une fonction pure ou une instance d’une classe héritant de React.Component"
+              }
+            ],
+            [
+              {
+                "text": "Son nom commence toujours par une lettre majuscule"
+              }
+            ],
+            [
+              {
+                "text": "Il est paramètré par des "
+              },
+              {
+                "text": "paramètres immuables",
+                "font": "+mn-lt",
+                "bold": true
+              },
+              {
+                "text": ", les "
+              },
+              {
+                "text": "props",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "18BC9C"
+              }
+            ],
+            [
+              {
+                "text": "Il a pour but de construire et retourner un morceau de VDOM : "
+              },
+              {
+                "text": "un élément",
+                "color": "18BC9C"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Immuable props"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Fonction pure ou instance de classe"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Elément DOM virtuel"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page": "9",
+      "header": "Rappel : une fonction pure",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Rappel : une fonction pure"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "Une fonction dite « pure » est une fonction qui "
+              },
+              {
+                "text": "ne modifie pas",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "E74C3D"
+              },
+              {
+                "text": " ses paramètres, ni son environnement (attribut, variables globales, variables static…). "
+              }
+            ],
+            [
+              {
+                "text": "Si j’appelle la fonction avec les même paramètres N fois, j’obtiens N fois le même résultat."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "10",
+      "header": "JSX",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "JSX"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "JSX : JavaScript eXtension",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " : langage utilisé pour créer des "
+              },
+              {
+                "text": "élements ",
+                "font": "+mn-lt",
+                "bold": true
+              },
+              {
+                "text": "(morceaux de DOM virtuel)"
+              }
+            ],
+            [
+              {
+                "text": "Un élement JSX "
+              },
+              {
+                "text": "est",
+                "font": "+mn-lt",
+                "bold": true
+              },
+              {
+                "text": " un object JS"
+              }
+            ],
+            [
+              {
+                "text": "Ressemble à du HTML dans lequel on peut injecter du JS en utilisant des accolades"
+              }
+            ],
+            [
+              {
+                "text": "JSX est plus proche de JS que HTML, donc  :"
+              }
+            ],
+            [
+              {
+                "text": "l’attribut HTML class est renommé className"
+              }
+            ],
+            [
+              {
+                "text": "la syntaxe de mots composés et le CamelCase (ex.: « background-color » devient « backgroundColor »)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "11",
+      "header": "Composant : Rendu d’élément",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Composant : Rendu d’élément"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "Traitement principal d’un composant React : "
+              },
+              {
+                "text": "rendre un élement",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              }
+            ],
+            [
+              {
+                "text": "Composant "
+              },
+              {
+                "text": "fonction",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "F39C11"
+              },
+              {
+                "text": " (pure) : prend en paramètre un objet JS immuable "
+              },
+              {
+                "text": "props",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "2E87C2"
+              },
+              {
+                "text": ", et retourne un élément"
+              }
+            ],
+            [
+              {
+                "text": "Composant "
+              },
+              {
+                "text": "Classe",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "F39C11"
+              },
+              {
+                "text": " :"
+              }
+            ],
+            [
+              {
+                "text": "hérite de"
+              },
+              {
+                "text": " React.Component",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "2E87C2"
+              }
+            ],
+            [
+              {
+                "text": "a un attribut"
+              },
+              {
+                "text": " this.props",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "2E87C2"
+              },
+              {
+                "text": " (immuable)"
+              }
+            ],
+            [
+              {
+                "text": "implémente la méthode "
+              },
+              {
+                "text": "render()",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "2E87C2"
+              },
+              {
+                "text": ", qui retourne un élement"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "12",
+      "header": "Ch. 3\nComposition et props",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Ch. 3"
+              }
+            ],
+            [
+              {
+                "text": "Composition et props"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "13",
+      "header": "Composition",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Composition"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "La composition (au sens objet) permet d’assembler des composants"
+              }
+            ],
+            [
+              {
+                "text": "ex: un composant « formulaire » peut utiliser plusieurs sous-composants correspondant aux champs"
+              }
+            ],
+            [
+              {
+                "text": "L’ensemble des composants forme le VDOM complet"
+              }
+            ],
+            [
+              {
+                "text": "Un composant est manipulable par son nom, à la manière d’une balise html (ex. : <MonComposant/>) "
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "DocumentManager"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Liste"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Ligne"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Cellule"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Widget"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "VDOM"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page": "14",
+      "header": "Composition & props",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Composition & props"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "props",
+                "font": "+mn-lt",
+                "bold": true,
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " : pour passer des données d’un composant père à un composant fils"
+              }
+            ],
+            [
+              {
+                "text": "props",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " : "
+              }
+            ],
+            [
+              {
+                "text": "un objet JS "
+              },
+              {
+                "text": "immuable (lecture seule) !",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "18BC9C"
+              }
+            ],
+            [
+              {
+                "text": "Passé en paramètre de la fonction pure décrivant le composant"
+              }
+            ],
+            [
+              {
+                "text": "ou passé en attribut de l’instance du  composant"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "manager"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "menu"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "ligne"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "bouton"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "liste"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "cellule"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "bouton"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "select"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "props"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "props"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "props"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "props"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "props"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "props"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "props"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page": "15",
+      "header": "Exemple de composition",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Exemple de composition"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Note : Un élément JSX est un élément JS : on peut donc manipuler des tableaux, etc !"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "MaListe"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "MonItem"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "MonItem"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page": "16",
+      "header": "Ch. 4\nCycle de vie et State",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Ch. 4"
+              }
+            ],
+            [
+              {
+                "text": "Cycle de vie et State"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "17",
+      "header": "Principe du State",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Principe du State"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "Un "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "bold": true,
+                "italic": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " est l’état d’un composant, c-a-d l’ensemble des informations qu’il détient."
+              }
+            ],
+            [
+              {
+                "text": "Un "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " est « "
+              },
+              {
+                "text": "la mémoire",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " » du composant."
+              }
+            ],
+            [
+              {
+                "text": "Le composant utilise son "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " pour inclure des informations dans son élément de rendu (ou les fournir à des composants enfants par composition, via les "
+              },
+              {
+                "text": "props",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": ")."
+              }
+            ],
+            [
+              {
+                "text": "Le composant ne peut changer "
+              },
+              {
+                "text": "que",
+                "font": "+mn-lt",
+                "bold": true
+              },
+              {
+                "text": " son propre "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "Lorsque le "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " change, React re-créé le VDOM pour répercuter tous les changements qui ont pu être provoqués."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "18",
+      "header": "Mise en place d’un state",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Mise en place d’un state"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "Un "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " est un "
+              },
+              {
+                "text": "objet JS",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " "
+              }
+            ],
+            [
+              {
+                "text": "Seul un composant de type classe peut avoir un "
+              },
+              {
+                "text": "state",
+                "italic": true
+              }
+            ],
+            [
+              {
+                "text": "Un "
+              },
+              {
+                "text": "state ",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": "est un objet "
+              },
+              {
+                "text": "immuable",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "F39C11"
+              },
+              {
+                "text": " : on ne modifie pas ce qu’il y a dans le "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": ", on en fourni un nouveau"
+              }
+            ],
+            [
+              {
+                "text": "Seul le composant possédant le "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " peut le changer"
+              }
+            ],
+            [
+              {
+                "text": "Le "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " est matérialisé dans l’objet par l’"
+              },
+              {
+                "text": "attribut de nom ",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "2E87C2"
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "bold": true,
+                "italic": true,
+                "color": "2E87C2"
+              },
+              {
+                "text": " ",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": "(convention à respecter)."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "19",
+      "header": "Cycle de vie du composant (1/3)",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Cycle de vie du composant (1/3)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Élément DOM"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "constructor(props)"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Élément DOM virtuel"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "render()"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "componentDidMount()"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "componentWillUnmount()"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "componentDidUpdate()"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "setState()"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Création de "
+              },
+              {
+                "text": "l’élément"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Mise à jour du "
+              },
+              {
+                "text": "composant"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Composant mis à jour"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Évenement DOM"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Traitement d’un événement "
+              },
+              {
+                "text": "dans le composant React"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Démontage "
+              },
+              {
+                "text": "du composant"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Montage du "
+              },
+              {
+                "text": "composant"
+              }
+            ]
+          ]
+        },
+        {
+          "paragraphs": [
+            [
+              {
+                "text": "Disparition de l’élément du VDOM"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "page": "20",
+      "header": "Cycle de vie du composant (2/3)",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Cycle de vie du composant (2/3)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "La classe "
+              },
+              {
+                "text": "React.Component",
+                "color": "3498DB"
+              },
+              {
+                "text": " dispose de méthodes pour gérer son cycle de vie qu’il est possible de redéfinir :"
+              }
+            ],
+            [
+              {
+                "text": "constructor(props) ",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": ": le constructeur du composant, utilisé notamment pour initialiser le "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": ". "
+              },
+              {
+                "text": "Note",
+                "underline": true
+              },
+              {
+                "text": " : ne jamais invoquer la méthode setState() dans le constructeur !"
+              }
+            ],
+            [
+              {
+                "text": "render()",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " : appelée pour reconstruire le VDOM du composant, doit retourner un élément JSX, un tableau d’éléments, une chaine de caractères ou un nombre (convertis en texte dans le VDOM), ou encore un booléen ou null (qui ne rendra rien dans le VDOM)."
+              }
+            ],
+            [
+              {
+                "text": "componentDidMount()",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " : appelée dès que le composant a été monté dans le DOM (utile si l’on a besoin d’accéder directement à des éléments DOM du composant par exemple)."
+              }
+            ],
+            [
+              {
+                "text": "componentDidUpdate()",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " : appelée après chaque mise à jour du composant, après que la méthode render() ait été invoquée. Cette méthode n’est pas appelée au premier rendu du composant."
+              }
+            ],
+            [
+              {
+                "text": "componentWillUnmount()",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " : appelée juste avant qu’un composant soit retiré du DOM. "
+              },
+              {
+                "text": "Note",
+                "underline": true
+              },
+              {
+                "text": " : ne jamais invoquer la méthode setState() dans cette méthode !"
+              }
+            ],
+            [
+              {
+                "text": "Il existe d’autres méthodes de gestion du cycle de vie, beaucoup moins utilisées : shouldComponentUpdate(), static getDerivedStateFromProps(), getSnapshotBeforeUpdate()."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "21",
+      "header": "Cycle de vie du composant (3/3)",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Cycle de vie du composant (3/3)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "2 autres méthodes",
+                "color": "3498DB"
+              },
+              {
+                "text": " à appeler pour provoquer un changement du cycle de vie :"
+              }
+            ],
+            [
+              {
+                "text": "setState(updater, [callback])",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " : « demande » à React de mettre à jour le "
+              },
+              {
+                "text": "state",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " du composant via l’updater puis de re-rendre le composant et ses enfants."
+              }
+            ],
+            [
+              {
+                "text": "setState()",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " n’assure en aucun cas que le composant et ses enfants soient mis à jour directement après son appel : React peut très bien retarder la mise à jour pour améliorer les performance."
+              }
+            ],
+            [
+              {
+                "text": "Si l’on souhaite effectuer un traitement une fois le composant mis à jour, on peut redéfinir la méthode "
+              },
+              {
+                "text": "componentDidUpdate()",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " (vue précédemment), ou fournir un callback en paramètre optionnel de la méthode setState."
+              }
+            ],
+            [
+              {
+                "text": "L’updater peut être une fonction pure ou un objet JS. Dans le cas d’une fonction, elle doit avoir la signature suivante :"
+              },
+              {
+                "text": " (",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": "state, props",
+                "font": "+mn-lt",
+                "bold": true,
+                "italic": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": ") => ",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": "stateChange",
+                "font": "+mn-lt",
+                "bold": true,
+                "italic": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": ", où state et props sont deux paramètres immuables et stateChange est un nouvel objet JS. Dans le cas d’un objet, React fera une « "
+              },
+              {
+                "text": "fusion en surface",
+                "color": "F39C11"
+              },
+              {
+                "text": " »  entre le state courant et l’objet : des propriétés présentes dans le state actuel et manquante dans le nouveau ne seront pas supprimées."
+              }
+            ],
+            [
+              {
+                "text": "Le composant et ses enfants sont toujours re-rendus, sauf si la méthode "
+              },
+              {
+                "text": "shouldComponentUpdate()",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": " a été redéfinie et retourne faux. "
+              }
+            ],
+            [
+              {
+                "text": "forceUpdate()",
+                "font": "+mn-lt",
+                "italic": true,
+                "color": "18BC9C"
+              },
+              {
+                "text": " : provoque la mise à jour du composant, en sautant également l’appel à la méthode "
+              },
+              {
+                "text": "shouldComponentUpdate(). ",
+                "font": "+mn-lt",
+                "italic": true
+              },
+              {
+                "text": "Normalement, cette méthode ne devrait pas avoir à être invoquée."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "22",
+      "header": "Ch. 5\nEcosystème React",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Ch. 5"
+              }
+            ],
+            [
+              {
+                "text": "Ecosystème React"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "23",
+      "header": "Ecosystème React de base",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "Ecosystème React de base"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "Create React App",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " : utilitaire console pour créer de nouveau projets. Permet de générer un nouveau projet (ensemble de fichiers), démarrer un serveur de dev et créer un bundle. Utilise Jest pour les tests unitaires."
+              }
+            ],
+            [
+              {
+                "text": "React Native",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " : pour créer des app. mobiles natives"
+              }
+            ],
+            [
+              {
+                "text": "Material-UI",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " : une bibliothèque de mise en forme (alternative à bootstrap par ex.)"
+              }
+            ],
+            [
+              {
+                "text": "Next.js",
+                "font": "+mn-lt",
+                "bold": true,
+                "color": "39BC9C"
+              },
+              {
+                "text": " : framework pour le pré-rendu côté serveur"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    },
+    {
+      "page": "24",
+      "header": "La fois prochaine\u000bReact : Gestions des données",
+      "frames": [
+        {
+          "type": "TITLE (1)",
+          "paragraphs": [
+            [
+              {
+                "text": "La fois prochaine"
+              },
+              {
+                "text": "React : Gestions des données"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "BODY (2)",
+          "paragraphs": [
+            [
+              {
+                "text": "React : ne s’occupe que de l’UI"
+              }
+            ],
+            [
+              {
+                "text": "Comment gérer les données de l’application ?"
+              }
+            ],
+            [
+              {
+                "text": "Plusieurs librairies possibles à utiliser avec React pour la gestion des données :"
+              }
+            ],
+            [
+              {
+                "text": "Flux (à l’origine)"
+              }
+            ],
+            [
+              {
+                "text": "Redux (la plus utilisée aujourd’hui)"
+              }
+            ],
+            [
+              {
+                "text": "Ou encore 14 autres ! ("
+              },
+              {
+                "text": "https://github.com/kriasoft/react-starter-kit/issues/22",
+                "underline": true,
+                "href": "https://github.com/kriasoft/react-starter-kit/issues/22"
+              },
+              {
+                "text": ")"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "SLIDE_NUMBER (13)",
+          "paragraphs": [
+            []
+          ]
+        }
+      ]
+    }
+  ]
+}
