@@ -1,0 +1,36 @@
+pres : { 'metadonnées',
+  1 
+  2       'slides' : [
+  3 
+  4             {
+  5             
+  6              'page' : '1',
+  7 
+  8              'header' : 'titre',
+
+  		 'deepness' : 1
+  9 
+ 10              'paragraphs' : [
+ 11 
+ 12                  {
+ 13                    
+ 14                    'text' : 'blabla',
+ 15 
+ 16                    'type' : 'body'
+ 17 
+ 18                    'bold' : true
+ 19                 	
+ 			...
+ 20                  }
+ 21 
+ 22                  ...
+ 23               }
+ 24          ]}
+
+
+
+les métadonnées ajoutées au Json sont les suivantes, si trouvées dans le
+fichier source : 
+
+title, subject, keywords, created, modified, author, length, format
+
