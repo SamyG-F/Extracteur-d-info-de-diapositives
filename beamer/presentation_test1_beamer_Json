@@ -1,0 +1,16 @@
+{
+  "author": "Samy Gascoin-Fontaine",
+  "title": "presentation test n°1",
+  "modified": "20 novembre 2020",
+  "subject": "test de génération Json",
+  "keywords": "test, Python, Json",
+  "length": 3,
+  "format": "beamer",
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "première page}italique(ceci est en italique)\\end{frame}\\subsection{Sous-section 1}\\begin{frame}{deuxième page}gras(ceci est en gras)\\end{frame}\\section{Section 2}\\begin{frame}{troisième page",
+      "content": "souligné(ceci est en souligné)"
+    }
+  ]
+}

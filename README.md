@@ -22,6 +22,10 @@ fichier utilisé lors des tests : data/CM1_React.pptx
 
 version actuelle : pptx_to_Json_Samy.py avec le test associé test_Samy.txt
 
+###/beamer : Transformation d'un document beamer en Json
+
+version non aboutie beamer_tests.py, testée avec presentation_test1.beamer, le Json est dans presentation_test1_beamer_Json
+
 ## Spécification du Json :
 
 La spécification du Json est dans 'spec_Json.txt'	        

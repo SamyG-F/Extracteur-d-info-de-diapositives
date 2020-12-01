@@ -29,6 +29,7 @@ def parse_presentation(p):
             slide['header'] = str(s.shapes.title.text)
         else:
             slide['header'] = ''
+        slide['deepness'] = '1' #no hierarchy between slides in pptx
         paragraphs = []
         for shape in s.shapes:
             #paragraphs = []
@@ -49,7 +50,7 @@ def parse_presentation(p):
                         if run.font.size != None: paragraph['size'] = run.font.size    
                         if run.hyperlink.address != None: paragraph['href'] = run.hyperlink.address     #text_runs.append(run.text)
                         if run.font.color.type != None:
-                            if run.font.color != None:                                     paragraph['color'] = str(run.font.color.rgb)
+                            if run.font.color != None:  paragraph['color'] = str(run.font.color.rgb)
                         paragraphs.append(paragraph)
         slide['paragraphs'] = paragraphs
         slides.append(slide)

@@ -5,6 +5,7 @@
     {
       "page": "1",
       "header": "React : Fondamentaux",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Rémi Venant - IUT MMI Laval - LP DIWA ",
@@ -32,6 +33,7 @@
     {
       "page": "2",
       "header": "Ch. 1 \nPrincipes de base",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Ch. 1 ",
@@ -46,6 +48,7 @@
     {
       "page": "3",
       "header": "React : une définition",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "React : une définition",
@@ -106,6 +109,7 @@
     {
       "page": "4",
       "header": "React : une anti-définition",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "React : une anti-définition",
@@ -132,6 +136,7 @@
     {
       "page": "5",
       "header": "React : définition structurelle",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "React : définition structurelle",
@@ -216,6 +221,7 @@
     {
       "page": "6",
       "header": "Le DOM Virtuel : base du framework React",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Le DOM Virtuel : base du framework React",
@@ -308,6 +314,7 @@
     {
       "page": "7",
       "header": "Ch. 2\nComposants & JSX",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Ch. 2",
@@ -322,6 +329,7 @@
     {
       "page": "8",
       "header": "Composant",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Composant",
@@ -370,6 +378,7 @@
     {
       "page": "9",
       "header": "Rappel : une fonction pure",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Rappel : une fonction pure",
@@ -399,6 +408,7 @@
     {
       "page": "10",
       "header": "JSX",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "JSX",
@@ -460,6 +470,7 @@
     {
       "page": "11",
       "header": "Composant : Rendu d’élément",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Composant : Rendu d’élément",
@@ -563,6 +574,7 @@
     {
       "page": "12",
       "header": "Ch. 3\nComposition et props",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Ch. 3",
@@ -577,6 +589,7 @@
     {
       "page": "13",
       "header": "Composition",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Composition",
@@ -603,6 +616,7 @@
     {
       "page": "14",
       "header": "Composition & props",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Composition & props",
@@ -654,6 +668,7 @@
     {
       "page": "15",
       "header": "Exemple de composition",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Exemple de composition",
@@ -664,6 +679,7 @@
     {
       "page": "16",
       "header": "Ch. 4\nCycle de vie et State",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Ch. 4",
@@ -678,6 +694,7 @@
     {
       "page": "17",
       "header": "Principe du State",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Principe du State",
@@ -791,6 +808,7 @@
     {
       "page": "18",
       "header": "Mise en place d’un state",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Mise en place d’un state",
@@ -923,6 +941,7 @@
     {
       "page": "19",
       "header": "Cycle de vie du composant (1/3)",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Cycle de vie du composant (1/3)",
@@ -933,6 +952,7 @@
     {
       "page": "20",
       "header": "Cycle de vie du composant (2/3)",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Cycle de vie du composant (2/3)",
@@ -1043,6 +1063,7 @@
     {
       "page": "21",
       "header": "Cycle de vie du composant (3/3)",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Cycle de vie du composant (3/3)",
@@ -1189,6 +1210,7 @@
     {
       "page": "22",
       "header": "Ch. 5\nEcosystème React",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Ch. 5",
@@ -1203,6 +1225,7 @@
     {
       "page": "23",
       "header": "Ecosystème React de base",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "Ecosystème React de base",
@@ -1257,6 +1280,7 @@
     {
       "page": "24",
       "header": "La fois prochaine\u000bReact : Gestions des données",
+      "deepness": "1",
       "paragraphs": [
         {
           "text": "La fois prochaine",

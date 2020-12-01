@@ -1,0 +1,39 @@
+\documentclass{beamer}
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usetheme{Boadilla}
+
+\title{presentation test n°1}
+\author{Samy Gascoin-Fontaine}
+\date{20 novembre 2020}
+\subject{test de génération Json}
+%On suppose l'importation d'une commande keywords
+\keywords{test, Python, Json}
+
+\chapter{}
+\section{}
+\subsection{}
+
+\begin{document}
+
+\chapter{Chapitre 1}
+\section{Section 1}
+
+\begin{frame}{première page}
+italique(ceci est en italique)
+\end{frame}
+
+\subsection{Sous-section 1}
+
+\begin{frame}{deuxième page}
+gras(ceci est en gras)
+\end{frame}
+
+\section{Section 2}
+
+\begin{frame}{troisième page}
+souligné(ceci est en souligné)
+\end{frame}
+
+\end{document}

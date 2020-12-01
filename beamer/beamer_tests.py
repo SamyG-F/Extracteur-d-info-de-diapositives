@@ -80,7 +80,7 @@ def add_content(pres, beamer_path):
         for text in p:
             num_slide = num_slide + 1
             dic = {}
-            dic['slide_number'] = num_slide
+            dic['page'] = num_slide
             dic['title'] = text[0]
             dic['content'] = text[1]
             pres['slides'].append(dic)
