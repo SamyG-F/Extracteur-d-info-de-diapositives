@@ -8,9 +8,9 @@ Version : 0.1
 
 Author : Samy Gascoin-Fontaine
 
-Le but de ce projet est de permettre une exploitation plus facile des données textuelles contenues dans une présentation. Le principe est le suivant : traiter le fichier dans son format d'origine (actuellement, il est prévu de gérer .pptx, beamer et odp). On le transforme en un Json intermédiaire que l'on va interroger. 
+Le but de ce projet est de permettre une exploitation plus facile des données textuelles contenues dans une présentation. Le principe est le suivant : traiter le fichier dans son format d'origine (actuellement, il est prévu de gérer .pptx, beamer et odp). On le transforme en un objet pivot intermédiaire que l'on va interroger. 
 
-Ce Json garde les informations de hiérarchie entre slides (deepness), et de mise en forme du texte.
+Cet objet est sérialisable en un JSON et garde les informations de hiérarchie entre diapositives, et de mise en forme du texte.
 
 ## Description des fichiers :
 
