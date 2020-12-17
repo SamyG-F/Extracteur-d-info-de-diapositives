@@ -24,7 +24,9 @@ version actuelle : pptx_to_Json_Samy.py avec le test associé test_Samy.txt
 
 ### /beamer : Transformation d'un document beamer en Json
 
-version non aboutie beamer_tests.py, testée avec presentation_test1.beamer, le Json est dans presentation_test1_beamer_Json
+Etude de parser LateX permettant l'extraction d'info : Etude des parser Beamer en python.ipynb
+
+Utilise le fichier test : Beamer_test_parser.tex
 
 ## Spécification du Json :
 
